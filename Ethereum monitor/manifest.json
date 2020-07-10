@@ -1,0 +1,21 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "static/js/config.js", "static/js/app.js", "static/js/background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup/popup.html"
+   },
+   "description": "Everything about Ethereum in one extension",
+   "icons": {
+      "128": "static/images/icon128.png",
+      "16": "static/images/icon16.png",
+      "48": "static/images/icon48.png"
+   },
+   
+   "manifest_version": 2,
+   "name": "Ethereum monitor",
+   "options_page": "options/options.html",
+   "permissions": [ "https://api.kraken.com/0/public/Ticker?pair=ETH*", "https://api.ethplorer.io/getAddressInfo/*", "https://fonts.googleapis.com/*" ],   
+   "version": "1.0"
+}
